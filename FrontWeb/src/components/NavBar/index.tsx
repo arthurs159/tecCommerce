@@ -8,7 +8,7 @@ const NavBar = () => {
         <h4>TecCommerce</h4>
 
         <button
-          className="navbar-toggler hamburguer-button"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#teccommerce-navbar"
@@ -26,6 +26,9 @@ const NavBar = () => {
             </li>
             <li>
               <a href="link">CATÁLOGO</a>
+            </li>
+            <li>
+              <a href="link">CATEGORIAS</a>
             </li>
             <li>
               <a href="link">ADMIN</a>

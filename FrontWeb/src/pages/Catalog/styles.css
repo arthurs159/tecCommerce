@@ -1,0 +1,13 @@
+.main-container-catalog {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border: 1px solid red;
+       height: 55px;
+       background-color: #9BECAD;
+}
+
+.main-container-catalog h1{
+       font-size: 14px;
+       font-weight: bold;
+}
