@@ -10,8 +10,11 @@ const Catalog = () => {
         <div>
           <h1>Aproveite a semana da Black Friday!!</h1>
         </div>
+      </div>
+
+      <div>
         <div>
-               <Product />
+          <Product />
         </div>
       </div>
     </>
