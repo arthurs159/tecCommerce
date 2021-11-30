@@ -1,0 +1,27 @@
+.main-container {
+       min-height: 70px;
+       padding-left: 20px;
+}
+
+.main-container h4{
+       font-size: 22px;
+       font-weight: bold;
+}
+
+.links-container li{
+       padding: 0px 0 20px 0;
+       font-size: 14px;
+       padding-top: 15px;
+}
+
+.links-container a:hover {
+       color: #fff;
+}
+
+@media( min-width: 758px) {
+       .links-container {
+              display: flex;
+              width: 55%;
+              justify-content: space-evenly;
+       }
+}

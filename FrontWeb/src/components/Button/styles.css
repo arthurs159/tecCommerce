@@ -1,0 +1,20 @@
+.button-container {
+  padding: 16px 0 33px 0;
+}
+
+.button-div h4 {
+  font-size: 17px;
+}
+
+.button-div button {
+  width: 240px;
+  height: 32px;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .button-div button {
+    width: 280px;
+    height: 40px;
+  }
+}
