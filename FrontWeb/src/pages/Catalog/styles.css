@@ -2,7 +2,6 @@
        display: flex;
        align-items: center;
        justify-content: center;
-       border: 1px solid red;
        height: 55px;
        background-color: #9BECAD;
 }

@@ -2,15 +2,17 @@
 .container {
   padding: 12px 10px 0 10px;
   padding-bottom: 20px;
-  height: 100%;
+  
 }
 
 .home-card {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border-radius: 20px;
-  background-color: #D4D4D4;
+  background-color: #FFFF;
+  height: 600px;
 }
 
 .img-container {

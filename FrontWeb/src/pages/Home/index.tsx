@@ -1,13 +1,11 @@
 import './styles.css';
-import NavBar from '../../components/Navbar';
 import img1 from '../../assets/images/notebookguy.png';
 import Button from '../../components/Button';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
     <>
-      <NavBar />
-      
       <div className="container">
         <div className="home-card">
           <div className="img-container">
@@ -16,7 +14,9 @@ const Home = () => {
           <div className="text">
             <h1>Bem-vindo à TecCommerce</h1>
             <p>Conheça nossos produtos e promoções</p>
-            <Button />
+            <Link to="catalog">
+              <Button />
+            </Link>
           </div>
         </div>
       </div>
