@@ -1,0 +1,25 @@
+
+.price-container {
+       width: 150px;
+       padding: 5px 5px;
+       margin-bottom: 15px;
+       background-color: #9BECAD;
+       border-radius: 5px;
+}
+
+.price-text {
+       display: flex;
+       align-items: center;
+       
+}
+
+.price-text p{
+       width:25px;
+       margin: 0 5px 0 0;
+       
+}
+
+.price-text h1{
+       width:110px;
+       font-size: 25px;
+}

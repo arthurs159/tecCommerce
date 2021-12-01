@@ -1,21 +1,24 @@
 .main-container {
        min-height: 70px;
        padding-left: 20px;
+       
 }
 
 .main-container h4{
-       font-size: 22px;
+       font-size: 25px;
        font-weight: bold;
+       
 }
 
 .links-container li{
-       padding: 5px 0 15px 0;
-       font-size: 14px;
+       font-size: 18px;
+       align-items: center;
        
 }
 
 .links-container a:hover {
        color: #fff;
+       font-weight: bold;
 }
 
 @media( min-width: 758px) {
