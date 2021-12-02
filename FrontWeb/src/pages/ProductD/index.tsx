@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import Comments from '../../components/Comments';
 import Description from '../../components/Description';
 import Price from '../../components/Price';
@@ -7,11 +8,15 @@ const Product = () => {
   return (
     <div className="main-box-container">
       <div className="box-container-card">
+        
         <div className="back-button">
+        <NavLink to="/catalog">
           <div className="container-text">
             <h1>VOLTAR</h1>
           </div>
+          </NavLink>
         </div>
+        
 
         <div className="row">
           <div className="col-xl-6">

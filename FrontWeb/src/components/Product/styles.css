@@ -9,6 +9,10 @@
   height: 390px;
 }
 
+.main-container-product:hover {
+  border: 1px solid black;
+}
+
 .image-product img {
   width: 100%;
   max-width: 265px;

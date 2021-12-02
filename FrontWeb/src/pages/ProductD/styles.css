@@ -24,11 +24,13 @@
 
 .back-button {
   padding-top: 15px;
+  width: 130px;
 }
 
 .container-img {
   display: flex;
   justify-content: center;
+  
 }
 
 .container-img img {

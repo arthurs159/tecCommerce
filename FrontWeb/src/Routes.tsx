@@ -19,7 +19,7 @@ const Routes = () => (
       <Route path="/categories">
         <Category />
       </Route>
-      <Route path="/catalog/teste">
+      <Route path="/catalog/1">
         <ProductD />
       </Route>
     </Switch>
