@@ -18,7 +18,7 @@ const Product = () => {
           </div>
         </div>
         <div className="price-container-index">
-          <Price />
+          <Price price={1234.99} />
         </div>
       </div>
     </div>

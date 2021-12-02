@@ -1,20 +1,30 @@
 .category-main-container {
-       display: flex;
-       flex-direction: column;
-       margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
 }
 
 .text-name-category {
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       margin: 0 15px 15px 15px;
-       height: 45px;
-       background-color: #9BECAD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px 15px 15px;
+  height: 45px;
+  background-color: #9becad;
 }
 
 .text-name-category h1 {
-       font-size: 15px;
-       font-weight: bold;
-       
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .text-name-category {
+         height: 60px;
+  }
+
+  .text-name-category h1 {
+       font-size: 20px;
+
+     }
 }

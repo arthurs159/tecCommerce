@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Catalog from './pages/Catalog';
 import Category from './pages/Category';
 import Home from './pages/Home';
+import ProductD from './pages/ProductD';
 
 
 const Routes = () => (
@@ -17,6 +18,9 @@ const Routes = () => (
       </Route>
       <Route path="/categories">
         <Category />
+      </Route>
+      <Route path="/catalog/teste">
+        <ProductD />
       </Route>
     </Switch>
   </BrowserRouter>
