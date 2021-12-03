@@ -1,11 +1,15 @@
 import './styles.css';
 
-const Description = () => {
+type Props = {
+  description: string;
+}
+
+const Description = ( { description }: Props) => {
        return (
               <div className="description-text-container">
               <div className="descrition-text">
                 <p>
-                  teste teste teste teste teste teste teste teste teste teste teste teste teste teste teste 
+                  {(description)} 
                 </p>
               </div>
             </div>

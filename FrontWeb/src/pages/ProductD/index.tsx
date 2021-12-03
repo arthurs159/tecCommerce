@@ -1,23 +1,30 @@
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import Comments from '../../components/Comments';
 import Description from '../../components/Description';
 import Price from '../../components/Price';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-import { Product } from '../../types/product';
+import { Products } from '../../types/product';
 import { BASE_URL } from '../../util/requests';
 
 import './styles.css';
 
+type UrlParams = {
+  productId: string;
+};
+
 const ProductD = () => {
-  const [prod, setProd] = useState<Product>();
+  
+  const { productId } = useParams<UrlParams>();
+
+  const [prod, setProd] = useState<Products>();
 
   useEffect(() => {
-    axios.get(BASE_URL + '/products/1')
-      .then((response) => {
+    axios.get(`${BASE_URL}/products/${productId}`)
+    .then((response) => {
       setProd(response.data);
     });
-  }, []);
+  }, [productId]);
 
   return (
     <div className="main-box-container">
@@ -32,15 +39,12 @@ const ProductD = () => {
 
         <div className="row">
           <div className="container-img">
-            <img
-              src="https://raw.githubusercontent.com/arthurs159/tecCommerce/master/FrontWeb/src/assets/images/notebook.png"
-              alt="laptop1"
-            />
+            <img src={prod?.imgUrl} alt={prod?.name} />
           </div>
           <div className="name-and-price-container">
             <h1>{prod?.name}</h1>
             <div className="price-product-container">
-              { prod && <Price price={prod?.price} />}
+              {prod && <Price price={prod?.price} />}
             </div>
           </div>
           <div className="description-container">
@@ -48,7 +52,7 @@ const ProductD = () => {
           </div>
 
           <div className="description-page">
-            <Description />
+            {prod && <Description description={prod?.description} />}
           </div>
 
           <div className="comments-text">
