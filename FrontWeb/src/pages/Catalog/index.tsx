@@ -45,7 +45,6 @@ const Catalog = () => {
             </NavLink>
             </div>
         ))}
-        
           </div>
       </div>
     </>
