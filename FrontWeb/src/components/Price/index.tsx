@@ -1,3 +1,4 @@
+import { formatPrice } from '../../util/formatters';
 import './styles.css';
 
 type Props = {
@@ -10,7 +11,7 @@ const Price = ({ price }: Props) => {
     <div className="price-container">
       <div className="price-text">
         <p>R$</p>
-        <h1>{(price)}</h1>
+        <h1>{formatPrice(price)}</h1>
       </div>
     </div>
     </div>

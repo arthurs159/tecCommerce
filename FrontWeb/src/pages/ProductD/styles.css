@@ -7,6 +7,7 @@
 
 .box-container-card {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .container-text h1 {
@@ -19,7 +20,12 @@
 }
 
 .container-text h1:hover {
-  background-color: #D6D6D6
+  background-color: #d6d6d6;
+}
+
+.comments-text {
+  text-align: center;
+  margin-bottom: 20px
 }
 
 .back-button {
@@ -30,7 +36,6 @@
 .container-img {
   display: flex;
   justify-content: center;
-  
 }
 
 .container-img img {
@@ -59,4 +64,14 @@
   text-align: center;
   font-size: 25px;
   font-weight: bold;
+}
+
+@media (min-width: 992px) {
+  .description-page{
+    padding: 0 100px;
+  }
+
+  .comment-page{
+    padding: 0 100px;
+  }
 }
