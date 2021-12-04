@@ -14,7 +14,6 @@ type UrlParams = {
 };
 
 const ProductD = () => {
-  
   const { productId } = useParams<UrlParams>();
 
   const [prod, setProd] = useState<Products>();
@@ -60,8 +59,6 @@ const ProductD = () => {
           </div>
 
           <div className="comment-page">
-            <Comments />
-            <Comments />
             <Comments />
           </div>
         </div>

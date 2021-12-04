@@ -40,7 +40,7 @@ const Catalog = () => {
 
         {page?.content.map((product) => (
             <div className="col-sm-6" key={product.id}>
-            <NavLink to="/catalog/1">
+            <NavLink to={`/catalog/ ${product.id}`}>
               <Product product={product}/>
             </NavLink>
             </div>
