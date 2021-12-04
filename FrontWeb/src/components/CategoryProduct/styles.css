@@ -10,6 +10,9 @@
   width: 100%;
   background-color: #ffff;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .category-container-product:hover {
@@ -22,8 +25,8 @@
 }
 
 .cat-img-container img {
-  padding: 15px 10px 28px 10px;
-  width: 260px;
+  padding: 0 10px 15px 10px;
+  max-width: 240px;
   margin-top: 15px;
 }
 
