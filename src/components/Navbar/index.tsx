@@ -35,9 +35,6 @@ const NavBar = () => {
                 CATEGORIAS
               </NavLink>
             </li>
-            <li>
-              <a href="link">ADMIN</a>
-            </li>
           </ul>
         </div>
       </div>
