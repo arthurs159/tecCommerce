@@ -18,7 +18,7 @@ const Product = ({ product } : Props) => {
             <h1>{product.name}</h1>
           </div>
           <div>
-            <p>A vista ou no pix</p>
+            <p>À vista ou no pix</p>
           </div>
         </div>
         <div className="price-container-index">
